@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Website</title>
+    <style>
+       
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        
+        header {
+            background-color: #222;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            position: relative;
+        }
+        .logo {
+            max-width: 100px;
+            height: auto;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+       
+        header {
+            background-color: #222;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            position: relative;
+        }
+        .logo {
+            max-width: 100px;
+            height: auto;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+       
+        nav {
+            text-align: center;
+            margin-top: 10px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: #333;
+            transition: background-color 0.3s ease;
+            display: inline-block;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+       
+        @media (max-width: 768px) {
+            nav a {
+                padding: 8px 16px;
+                font-size: 0.9em;
+            }
+            .logo {
+                max-width: 80px;
+            }
+        }
+       
+        .facilities {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .facility-item {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .facility-item:hover {
+            transform: scale(1.05);
+        }
+        .facility-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        .room-types {
+            margin-top: 30px;
+        }
+
+        .room-types dl {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .room-item {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            text-align: center;
+        }
+
+        .room-item:hover {
+            transform: scale(1.05);
+        }
+
+        .room-item img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        
+        .offer {
+            background-color: #aeb3b1;
+            color: #333;
+            padding: 30px;
+            border-radius: 15px;
+            margin: 50px;
+            text-align: center;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+        .offer h2 {
+            margin-bottom: 20px;
+            font-size: 2em;
+            color: #222;
+        }
+        .offer p {
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        .offer img {
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        .offer-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .offer-text {
+            flex: 1;
+            text-align: left;
+        }
+        
+        footer {
+            background-color: #222;
+            color: #fff;
+            padding: 40px;
+            text-align: center;
+        }
+        footer p {
+            margin: 0;
+            font-size: 0.9em;
+        }
+        
+        @media (max-width: 768px) {
+            nav a {
+                padding: 8px 12px;
+                font-size: 0.9em;
+            }
+            .logo {
+                max-width: 80px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header id="home">
+        <img src="hotel-logo.webp" alt="Hotel Logo" class="logo">
+        <h1>Ocean Side</h1>
+        <nav>
+            <a href="Hotel.html">Home</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="login.html">Login</a>
+            <a href="reservation.html">Reservation</a>
+            <a href="contactus.html">Contact</a>
+	    <a href="aboutus.html">About</a>
+        </nav>
+    </header>
+    <div class="container">
+        <h2 id="facilities">Hotel Facilities</h2>
+        <ul class="facilities" >
+            <li class="facility-item">
+                <img src="pool.jpg" alt="Swimming Pool">
+                <h3>Swimming Pool</h3>
+            </li>
+            <li class="facility-item">
+                <img src="Resturant.webp" alt="Restaurant">
+                <h3>Restaurant</h3>
+            </li>
+            <li class="facility-item">
+                <img src="spa.webp" alt="Spa">
+                <h3>Spa</h3>
+            </li>
+            <li class="facility-item">
+                <img src="gym.webp" alt="Gym">
+                <h3>Gym</h3>
+            </li>
+            <li class="facility-item">
+                <img src="free.webp" alt="Free WiFi">
+                <h3>Free WiFi</h3>
+            </li>
+        </ul>
+        <div class="room-types" id="rooms">
+            <h2>Room Types</h2>
+            <dl>
+                <div class="room-item">
+                    <dt>
+                        <h3>Standard Room</h3>
+                        <img src="room.webp" alt="Standard Room">
+                    </dt>
+                    <dd>A comfortable room with essential amenities.</dd>
+                </div>
+                <div class="room-item">
+                    <dt>
+                        <h3>Deluxe Room</h3>
+                        <img src="Deluxe-Room-at-Stamford-Plaza-Brisbane-Hotel_King-Bed.webp" alt="Deluxe Room">
+                    </dt>
+                    <dd>A spacious room with luxury amenities.</dd>
+                </div>
+                <div class="room-item">
+                    <dt>
+                        <h3>Suite</h3>
+                        <img src="hotel-suite.webp" alt="Suite">
+                    </dt>
+                    <dd>An exclusive suite with premium facilities.</dd>
+                </div>
+            </dl>
+        </div>
+        
+    </div>
+        
+            <div class="offer" id="offer">
+                <div class="offer-content">
+                    <div class="offer-text">
+                        <h2>Special Offer</h2>
+                        <p><strong>Stay 3 nights, pay for 2!</strong> Valid from <strong>13th June 2022</strong> to <strong>15th June 2022</strong>.</p>
+                    </div>
+                    <img src="luxury-hotel-room.webp" alt="Hotel Room" class="room-image">
+                </div>
+            </div>
+    </div>
+    <footer id="contact">
+        <p>&copy; 2024 Ocean Side. All Rights Reserved. | Contact Us: 123-456-7890 | info@ocienhotel.com</p>
+    </footer>
+</body>
+</html>

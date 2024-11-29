@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>LOGIN PAGE</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <style type="text/css">
+        header {
+            background-color: #222;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            position: relative;
+        }
+        .logo {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+            object-fit: cover;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        nav {
+            text-align: center;
+            margin-top: 10px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: #333;
+            transition: background-color 0.3s ease;
+            display: inline-block;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        body {
+            background: url("login_image_1.jpg") no-repeat center center fixed;
+            -webkit-background-size: fixed;
+            -moz-background-size: fixed;
+            -o-background-size: fixed;
+            background-size: cover;
+        }
+
+        form {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            width: 50%;
+            max-width: 500px;
+            margin: auto;
+            margin-top: 90px;
+            margin-bottom: 50px;
+            text-align: center;
+        }
+        form h3 {
+            margin-top: 0; 
+            margin-bottom: 10px;
+        }
+        form input, form textarea {
+            width: 90%;
+            margin: 10px 0;
+            padding: 10px;            
+            border-radius: 5px;
+            background-color: black;
+            color: white;
+            outline: none; /* Remove the outline (outer border) */
+        }
+        form input[type="submit"] {
+            background-color: red;
+            color: white;
+            cursor: pointer;
+            width: auto;
+            padding: 10px 20px;
+        }
+        form input[type="submit"]:hover {
+            background-color: darkred;
+        }
+
+        footer {
+            background-color: #222;
+            color: #fff;
+            padding: 40px;
+            text-align: center;
+            margin-top: 50px;
+        }
+        footer p {
+            margin: 0;
+            font-size: 0.9em;
+        }
+
+        .circle-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 15px;
+            display: block;
+        }
+
+        @media (max-width: 768px) {
+            nav a {
+                padding: 8px 12px;
+                font-size: 0.9em;
+            }
+            .logo {
+                width: 70px;
+                height: 70px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header id="home">
+        <img src="hotel-logo.webp" alt="Hotel Logo" class="logo">
+        <h1>Ocean Side</h1>
+        <nav>
+            <a href="Hotel.html">Home</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="login.html">Login</a>
+            <a href="reservation.html">Reservation</a>
+            <a href="contactus.html">Contact</a>
+            <a href="aboutus.html">About</a>
+        </nav>
+    </header>
+
+    <form action="/action.php">
+        <img src="login_icon.jpg" alt="Login Icon" class="circle-icon"><br><br>
+        <h2>Login....</h2>
+        <fieldset>
+            <input type="text" name="uname" id="uname" placeholder="Enter Username" class="input"><br><br>
+            <input type="password" name="pwd" id="pwd" placeholder="Enter Password" class="input"><br><br>
+            <input type="submit" name="submit" value="Submit" class="submit">
+        </fieldset>
+    </form>
+
+     <footer id="contact">
+        <p>&copy; 2024 Ocean Side. All Rights Reserved. | Contact Us: 123-456-7890 | info@ocienhotel.com</p>
+    </footer>
+</body>
+</html>

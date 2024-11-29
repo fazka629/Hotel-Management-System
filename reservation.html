@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>RESERVATION</title>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+	<style type="text/css">
+		 
+        header {
+            background-color: #222;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            position: relative;
+        }
+        .logo {
+            max-width: 100px;
+            height: auto;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+       
+        nav {
+            text-align: center;
+            margin-top: 10px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: #333;
+            transition: background-color 0.3s ease;
+            display: inline-block;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+
+		.body{
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			background: url("reservation.jpg") no-repeat  center center fixed;
+			-webkit-background-size :fixed;
+			-moz-background-size :fixed;
+			-o-background-size :fixed;
+			background-size :cover;
+		}
+		.form{
+			background-color: rgba(0, 0, 0, 0.8);
+			color: white;
+			padding: 30px;
+			border-radius: 10px;
+			width: 50%;
+			max-width: 500px;
+			margin: auto;
+			margin-top: 90px;
+			margin-bottom: 50px;
+			text-align: center;
+		}
+		.group{
+			width: 100%;
+			margin-top: 25px;
+		}
+		.content{
+			width: 100%;
+			margin: 10px;
+			padding: 5px;
+		}
+		.content input, .content select{
+			width: 90%;
+			margin: 10px 0;
+			padding: 10px;
+			border-radius: 5px;
+			background-color: black;
+			color: white;
+			outline: none;
+		}
+		.content #group::placeholder{
+			color: #fff;
+		}
+		.sbmt-btn{
+			margin-top: 30px;
+			background-color: red;
+			color: white;
+			width: 150px;
+			border: none;
+			padding: 10px;
+			font-size: 20px;
+			border-radius: 5px;
+			cursor: pointer;
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.sbmt-btn:hover{
+			background-color: darkred;
+		}
+		.text{
+			text-align: center;
+			color: white;
+		}
+		 
+        footer {
+            background-color: #222;
+            color: #fff;
+            padding: 40px;
+            text-align: center;
+        }
+        footer p {
+            margin: 0;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 768px) {
+            nav a {
+                padding: 8px 12px;
+                font-size: 0.9em;
+            }
+            .logo {
+                max-width: 80px;
+            }
+        }
+
+	</style>
+</head>
+<body>
+	<header id="home">
+        <img src="hotel-logo.webp" alt="Hotel Logo" class="logo">
+        <h1>Ocean Side</h1>
+        <nav>
+            <a href="Hotel.html">Home</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="login.html">Login</a>
+            <a href="reservation.html">Reservation</a>
+            <a href="contactus.html">Contact</a>
+	    <a href="aboutus.html">About</a>
+        </nav>
+    </header>
+
+<div class="body">
+	<div class="container">
+		<div class="form-group">
+			<div class="form">
+				<h1 class="text">Reserve Now</h1>
+				<div class="group">
+					<div class="content">
+						<input type="text" name="group" id="group" placeholder="First name">
+					</div>
+
+					<div class="content">
+						<input type="tel" name="group" id="group" placeholder="Phone number">
+					</div>
+
+					<div class="content">
+						<input type="text" name="group" id="group" placeholder="Departure Date">
+					</div>
+
+					<div class="content">
+						<select id="group">
+							<option value="" style="background-color: black;">No. of guests</option>
+							<option value="" style="background-color: black;">1-5</option>
+							<option value="" style="background-color: black;">6-10</option>
+							<option value="" style="background-color: black;">11-20</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="group">
+					
+					<div class="content">
+						<input type="text" name="group" id="group" placeholder="Last name">
+					</div>
+
+					<div class="content">
+						<input type="text" name="group" id="group" placeholder="Email">
+					</div>
+
+					<div class="content">
+						<input type="text" name="group" id="group" placeholder="Arrival Date">
+					</div>
+
+					<div class="content">
+						<select id="group">
+							<option value="" style="background-color: black;">Room Type</option>
+							<option value="" style="background-color: black;">Standard Room</option>
+							<option value="" style="background-color: black;">Deluxe Room</option>
+							<option value="" style="background-color: black;">Suite</option>
+						</select>
+					</div>
+				</div>
+				<button type="submit" value="submit" class="sbmt-btn">Book Now</button>
+			</div>
+			
+		</div>
+	</div>
+</div>
+	<footer id="contact">
+        <p>&copy; 2024 Ocean Side. All Rights Reserved. | Contact Us: 123-456-7890 | info@ocienhotel.com</p>
+    </footer>
+
+</body>
+</html>

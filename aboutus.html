@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url("aboutus-bg.jpg") no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        header {
+            background-color: #222;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            position: relative;
+        }
+        .logo {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+            object-fit: cover;
+        }
+        h1 {
+            margin: 0;
+            font-size: 2em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        nav {
+            text-align: center;
+            margin-top: 10px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: #333;
+            transition: background-color 0.3s ease;
+            display: inline-block;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+
+        main {
+            flex-grow: 1;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .about-content {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 40px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            width: 80%;
+            max-width: 1000px;
+        }
+
+        .about-content h2 {
+            color: white; /* Set heading color to white */
+            font-size: 35px;
+            font-weight: bold;
+            margin-bottom: 20px; /* Reduced the gap between heading and content */
+            letter-spacing: 5px;
+            word-spacing: 8px;
+        }
+
+        .about-content p {
+            font-size: 20px;
+            line-height: 1.6;
+            font-weight: normal;
+            margin-top: 20px;
+        }
+
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        @media (max-width: 768px) {
+            nav a {
+                padding: 8px 12px;
+                font-size: 0.9em;
+            }
+            .logo {
+                max-width: 80px;
+            }
+            .about-content {
+                width: 90%;
+                padding: 20px;
+            }
+            .about-content p {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="hotel-logo.webp" alt="Hotel Logo" class="logo">
+        <h1>Ocean Side</h1>
+        <nav>
+            <a href="Hotel.html">Home</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="login.html">Login</a>
+            <a href="reservation.html">Reservation</a>
+            <a href="contactus.html">Contact</a>
+            <a href="aboutus.html">About</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="about-content">
+            <h2>About Us</h2>
+            <p>
+                Welcome to Ocean Side, a destination where luxury meets the ocean. Our hotel offers an unforgettable experience in an idyllic coastal setting, providing guests with personalized service and world-class amenities. Whether you are here for business or leisure, we aim to make your stay exceptional.
+            </p>
+            <p>
+                Ocean Side is committed to offering the best in hospitality, providing a sanctuary where you can unwind, relax, and rejuvenate. Our dedicated team is here to ensure your comfort and create lasting memories.
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Ocean Side. All Rights Reserved. | Contact Us: 123-456-7890 | info@ocienhotel.com</p>
+    </footer>
+</body>
+</html>
